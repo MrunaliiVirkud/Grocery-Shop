@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<title>Nature Cart</title>
+	<style type="text/css">
+		body{
+			background-image: url(grocery1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		    height: max-content;
+		    background-position: center;
+        }
+		.h1{
+			text-align: center;
+			color: black;
+			font-variant: small-caps;
+			font-size: 100px;
+			font-family: fantasy;
+			letter-spacing: 10px;
+		}
+		.sticky{
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.menu{
+			background: rgb(0,100,0);
+			text-align: center;
+            border: solid black;
+            animation-name: mine;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes mine{
+        	0%{background-color: rgb(0,100,0);}
+        	25%{background-color: rgb(0,90,0);}
+        	50%{background-color: rgb(0,60,0);}
+        	75%{background-color: rgb(0,40,0);}
+        	100%{background-color: rgb(0,20,0);}
+        }
+        .menu-ul{
+			padding: 10px 10px 12px 10px;
+			display: inline-block;
+		}
+		.menu-ul li{
+ 			font-size: 17px;
+ 			display: inline-block;
+ 			padding: 8px 8px 10px 8px;
+		}
+		.a-menu li{
+			font-size: 20px;
+			color: white;
+			border: 2px solid white;
+		}
+		.menu-ul li:hover{
+			background: rgb(0, 80, 0);
+			transform: scale(1.1);
+		}
+		.login{
+			border: 2px solid white;
+			background: rgba(0,0,0,0.5);
+			width: max-content;
+			font-size: 25px;
+			margin-left: 74%;
+			display: inline-block;
+		}
+		.login a{
+			text-decoration: none;
+			color: white;
+			display: inline-block;
+			padding: 5px 5px 5px 5px;		
+		}
+		.login a:hover{
+			background-color: rgb(0,0,0.9);
+			transform: scale(1.1); 
+			text-decoration: underline;
+		}
+		.login i{
+			color: white;
+			padding-left: 8px;
+			display: inline-block;
+			padding: 5px 5px 5px 5px;
+		}
+		.container{
+			margin: 10px 10px 10px 5%;
+			width: 100%;
+		}
+		.categories{
+			border: 3px solid black;
+			border-radius: 0 0 50px 50px;
+			width: max-content;
+			background: white;
+			display: inline-block;
+			margin: 50px;
+			padding: 30px;
+		}
+		.categories:hover{
+			box-shadow: 0 0 10px 3px #184d47;
+		}
+		.item-image{
+			border-radius: 0 0 50px 50px;
+			height: 200px;
+			width: 200px;
+			padding: 20px;
+		}
+		.image-title{
+			font-weight: bold;
+			padding: 10px;
+			text-align: center;
+			font-family: inherit;
+			font-size: 20px;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+    		<a href="login.php" class="a-menu">Login<i class="fa fa-user" aria-hidden="true"></i></a>
+    		<a href="about.html" class="a-menu">About Us</a>
+    		<a href="contact.html" class="a-menu">Contact Us</a>
+    	</div>
+   <h1 class="h1">Nature Cart</h1>
+    <div class="menu" id="sticky">
+    	<ul class="menu-ul">
+    		<a href="Grocery Shop.html" class="a-menu"><li>Home</li></a>
+    		<a href="DalsBeans.html" class="a-menu"><li>Dals And Beans</li></a>
+    		<a href="Grains.html" class="a-menu"><li>Grains</li></a>
+    		<a href="cooking oil.html" class="a-menu"><li>Cooking Oil</li></a>
+    		<a href="nuts&seeds.html" class="a-menu"><li>Nuts And Seeds</li></a>
+    		<a href="breakfast.html" class="a-menu"><li>Breakfast Essential</li></a>
+    		<a href="snack.html" class="a-menu"><li>Snack Essential</li></a>
+    		<a href="dairy.html" class="a-menu"><li>Dairy</li></a>
+    		<a href="condiments.html" class="a-menu"><li>Condiments</li></a>
+    		<a href="Deals.html" class="a-menu"><li>Deals</li></a>
+    	</ul>
+    </div>
+       <!---Home page begins--->
+    	<div class="container">
+    		<a href="DalsBeans.html">
+    		<div class="categories">
+    			<img src="dals.jpg" class="item-image"/>
+    			<div  class="image-title">Dals and Beans</div>
+    		</div>
+    	    </a>
+    		<a href="Grains.html">
+    		<div class="categories">
+    			<img src="grains.jpg" class="item-image"/>
+    			<div  class="image-title">Grains</div>
+    		</div>
+    	</a>
+    		<a href="Cooking Oil.html">
+    		<div class="categories">
+    			<img src="oils.jpg" class="item-image"/>
+    			<div  class="image-title">Cooking Oil</div>
+    		</div>
+    	</a>
+    	<a href="nuts&seeds.html">
+    		<div class="categories">
+    			<img src="nuts.jpg" class="item-image"/>
+    			<div  class="image-title">Nuts/Seeds</div>
+    		</div>
+    	</a>
+      		<a href="breakfast.html">
+    		<div class="categories">
+    			<img src="breakfast.jpg" class="item-image"/>
+    			<div  class="image-title">Breakfast Essential</div>
+    		</div>
+    	</a>
+    		<a href="snack.html">
+    		<div class="categories">
+    			<img src="snacks.jpg" class="item-image"/>
+    			<div  class="image-title">Snack Essential</div>
+    		</div>
+    	</a>
+    		<a href="dairy.html">
+    		<div class="categories">
+    			<img src="dairy.jpg" class="item-image"/>
+    			<div  class="image-title">Dairy</div>
+    		</div>
+    	    </a>
+    		<a href="condiments.html">
+    		<div class="categories">
+    			<img src="soses2.jpg" class="item-image"/>
+    			<div  class="image-title">Condiments</div>
+    		</div>
+    	    </a>
+    		<a href="Deals.html">
+    		<div class="categories">
+    			<img src="img2.jpg" class="item-image"/>
+    			<div  class="image-title">Deals</div>
+    		</div>
+    	    </a>
+    	</div>
+    <!---Home page ends--->
+</body>
+</html>
